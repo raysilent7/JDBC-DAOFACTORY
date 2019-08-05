@@ -1,18 +1,35 @@
 package application;
 
+import dao.DaoFactory;
+import dao.SellerDao;
 import entities.Department;
 import entities.Seller;
 
-import java.util.Date;
+import java.util.List;
 
 public class Main {
 
     public static void main(String[] args) {
 
-        Department dep = new Department(1, "books");
-        System.out.println(dep);
+        SellerDao sellerDao = DaoFactory.createSellerDao();
 
-        Seller seller = new Seller(1001, "Rayan", "rgc471@hotmail.com", new Date(), 3000.00, dep);
+        System.out.println("===== Seller findById =====");
+        Seller seller = sellerDao.findById(3);
         System.out.println(seller);
+
+        System.out.println("===== Seller findByDepartment =====");
+        Department department = new Department(2, null);
+        List<Seller> list = sellerDao.findByDepartment(department);
+
+        for (Seller obj : list) {
+            System.out.println(obj);
+        }
+
+        System.out.println("===== Seller findAll =====");
+        list = sellerDao.findAll();
+
+        for (Seller obj : list) {
+            System.out.println(obj);
+        }
     }
 }
