@@ -2,11 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c1db38be-fa68-4066-95f4-c30effee0e0e" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/dao/impl/DepartmentDaoJdbc.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/application/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/DaoFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/DaoFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dao/impl/SellerDaoJdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/impl/SellerDaoJdbc.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dao/impl/DepartmentDaoJdbc.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dao/impl/DepartmentDaoJdbc.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -100,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1565029669464</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="DepartmentDao and Methods findById, insert and update">
+      <created>1565033829490</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1565033829490</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -118,6 +123,7 @@
     <MESSAGE value="Entitie classes and Dao interfaces" />
     <MESSAGE value="Methods findById, findByDepartment and findAll" />
     <MESSAGE value="Methods insert, update and deleteById" />
-    <option name="LAST_COMMIT_MESSAGE" value="Methods insert, update and deleteById" />
+    <MESSAGE value="DepartmentDao and Methods findById, insert and update" />
+    <option name="LAST_COMMIT_MESSAGE" value="DepartmentDao and Methods findById, insert and update" />
   </component>
 </project>

@@ -4,14 +4,16 @@ import dao.DaoFactory;
 import dao.DepartmentDao;
 import entities.Department;
 
+import java.util.List;
+
 public class Main {
 
     public static void main(String[] args) {
         DepartmentDao departmentDao = DaoFactory.createDepartmentDao();
 
-        Department department = departmentDao.findById(5);
-        department.setName("Games");
-        departmentDao.update(department);
-        System.out.println("Updated row");
+        List<Department> list = departmentDao.findAll();
+        for (Department deps : list) {
+            System.out.println(deps);
+        }
     }
 }
